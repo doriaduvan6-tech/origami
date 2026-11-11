@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CDN React -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- CDN Babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+        function Card() {
+            return (
+                <>
+                    <div className="content">
+                        <div className="info">
+                            
+                            <h1 className="name">Evelyn 😁</h1>
+                            <p className="ms">Felicidades por tus dias lindos y no tan lindos porque lo haces bien</p>
+                            <br />
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW3UTwEHZWXE-h766btaX47nquOdH6ABUq0j1o7vfhYA&s=10" alt="" />
+                        </div>
+                    </div>
+                </>
+            );
+        }
+
+        // Renderizar la aplicación en el DOM virtual
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<Card />);
+    </script>
+</body>
+
+</html>
